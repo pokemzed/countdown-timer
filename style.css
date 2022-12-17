@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica, Sans-Serif;
+    font-size: 18px;
+    font-weight: bold;
+
+    background-color: #C5FFDB;
+}
+h1{
+    color: #fff;
+    font-size: 48px;
+}
+span{
+    font-weight: 400;
+    color: #fff;
+}
+
+
+/* Стилизация основного контейнера */
+.content__wrap{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Стилизация верхней плашки */
+.time__wrap{
+    width: 600px;
+    padding: 40px 0;
+    background: linear-gradient(90deg, #92FE9D 0%, #00C9FF 100%);
+    border-radius: 25px;
+    margin-bottom: 25px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    display: none;
+}
+
+
+/* Стилизация нижней плашки */
+.generate-time__wrap{
+    width: 600px;
+    padding: 35px 32px;
+    background: linear-gradient(90deg, #43E97B 0%, #38F9D7 100%);
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+}
+.generate-time__wrap h1{
+    margin-bottom: 30px;
+}
+
+.value__wrap{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    margin-bottom: 10px;
+}
+.input{
+    height: 60px;
+    background: linear-gradient(90deg, #0BA360 0%, #3CBA92 100%);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    
+    margin-bottom: 35px;
+}
+.input:focus{
+    border: 2px solid #92FE9D;
+    box-shadow: 0px 35px 21px -15px #43E97B;
+}
+
+.button__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    height: 70px;
+    width: 60%;
+    background: linear-gradient(90deg, #0BA360 0%, #3CBA92 100%);
+    border-radius: 10px;
+
+    border: none;
+    cursor: pointer;
+    transition: .1s;
+
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.button:hover{
+    /* background: linear-gradient(90deg, #0BA360 0%, #3CBA92 100%); */
+    border: 2px solid #92FE9D;
+    box-shadow: 0px 35px 21px -15px #43E97B;
+}
+.button:disabled{
+    opacity: 10%;
+}
+
+.reload{
+    display: none;
+    cursor: pointer;
+}
